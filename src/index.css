@@ -1,0 +1,25 @@
+body {
+  background-color: #f4f5f7;
+}
+
+.contenido {
+  min-height: calc(100vh - 120px);
+}
+
+/* tarjetas de las peliculas */
+.card-media img {
+  height: 320px;
+  object-fit: cover;
+}
+
+.card-media .card-text {
+  font-size: 0.9rem;
+}
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table td {
+  vertical-align: middle;
+}
