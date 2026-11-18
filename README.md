@@ -70,7 +70,7 @@ La aplicación queda en `http://localhost:3000`.
 
 El frontend está desplegado en **Render** como Static Site y consume la API desplegada de la EA1.
 
-- URL del frontend: `https://frontend-peliculas-iudigital.onrender.com` (cambiar por la URL real que entrega Render)
+- URL del frontend: https://frontend-peliculas-iudigital.onrender.com
 - Build command: `npm install && npm run build`
 - Publish directory: `dist`
 - Variable de entorno: `VITE_API_URL` con la URL de la API en Render (sin `/` al final).
