@@ -65,3 +65,15 @@ La aplicación queda en `http://localhost:3000`.
 - Género, director y productora se crean con estado Activo o Inactivo. Tipo no tiene estado.
 - Al crear o editar una película o serie, en las listas solo salen los géneros, directores y productoras **activos** (se usan los servicios `/genero/activos`, `/director/activos` y `/productora/activas`).
 - Si la API responde con error (por ejemplo, nombre o serial repetido), se muestra el mensaje con SweetAlert2.
+
+## Despliegue (EA3)
+
+El frontend está desplegado en **Render** como Static Site y consume la API desplegada de la EA1.
+
+- URL del frontend: `https://frontend-peliculas-iudigital.onrender.com` (cambiar por la URL real que entrega Render)
+- Build command: `npm install && npm run build`
+- Publish directory: `dist`
+- Variable de entorno: `VITE_API_URL` con la URL de la API en Render (sin `/` al final).
+- Regla de *Redirects/Rewrites*: `/*` → `/index.html` (Rewrite), para que las rutas de React Router funcionen al recargar la página.
+
+También está el archivo `render.yaml` con esta configuración.
